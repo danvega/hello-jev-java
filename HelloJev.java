@@ -48,8 +48,10 @@ void main() throws Exception {
             .build();
 
     try (var client = HttpClient.newHttpClient()) {
+        long start = System.nanoTime();
         var response = client.send(request, HttpResponse.BodyHandlers.ofString());
         IO.println("HTTP " + response.statusCode());
         IO.println(response.body());
+        IO.println("Took " + Duration.ofNanos(System.nanoTime() - start).toMillis() + " ms");
     }
 }

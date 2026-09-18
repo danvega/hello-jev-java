@@ -50,3 +50,5 @@ Open `HelloJev.java` and edit the JSON text block:
 Run the same command again. Keep your API key in the environment, out of the source file.
 
 Learn more in the [TypeSafe quick start](https://docs.typesafe.ai/introduction/quickstart) and [API reference](https://docs.typesafe.ai/api).
+
+An unofficial community example. [MIT licensed](LICENSE).
